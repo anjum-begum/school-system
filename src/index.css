@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+body {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #062555;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.vision-section {
+  position: relative;
+  padding: 100px 5%;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  overflow: hidden;
+}
+
+.vision-section .overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1551434678-e076c223a692') center/cover no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.vision-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.vision-header h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.vision-header p {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Vision Cards */
+.vision-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 35px 25px;
+  color: #fff;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vision-card .icon i {
+  font-size: 2.8rem;
+  color: #ffc107;
+}
+
+.vision-card h4 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.vision-card p {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Hover effect */
+.vision-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer quote */
+.vision-footer p {
+  color: #f8f9fa;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vision-section {
+    padding: 70px 4%;
+  }
+
+  .vision-header h2 {
+    font-size: 2rem;
+  }
+
+  .vision-card {
+    padding: 25px 20px;
+  }
+}
+
+footer {
+  background-color: #0d6efd;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
